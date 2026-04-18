@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>GAIL Application-Based Polymer Recommendation Engine</title>
+</head>
+<body>
+
+<h1>GAIL Polymer Recommendation Engine (Application Driven)</h1>
+
+<p><b>Brands:</b> G-Lene | G-Lex | G-Pro | G-Tex</p>
+
+<hr>
+
+<h2>Decision Logic</h2>
+<ul>
+<li>Primary = Best technical fit</li>
+<li>Alt 1 = Processability variation</li>
+<li>Alt 2 = Secondary fallback</li>
+<li>Use "U" grades for UV exposure</li>
+</ul>
+
+<hr>
+
+<h2>Processing Categories</h2>
+<ul>
+<li>Film Extrusion</li>
+<li>Injection Molding</li>
+<li>Blow Molding</li>
+<li>Pipe Extrusion</li>
+<li>Raffia</li>
+<li>Rotomolding</li>
+</ul>
+<hr>
+
+<!-- FILM APPLICATIONS -->
+<h2>Application: Film (Blown / Cast / Packaging)</h2>
+
+<h3>Milk / Dairy Packaging Film</h3>
+<table border="1">
+<tr><th>Priority</th><th>Grade</th><th>Reason</th></tr>
+<tr><td>Primary</td><td>G-Lene F20S009</td><td>Designed for liquid packaging</td></tr>
+<tr><td>Alt 1</td><td>G-Lene F18S010U</td><td>Better processability</td></tr>
+<tr><td>Alt 2</td><td>G-Lene MF18A010U</td><td>Advanced film performance</td></tr>
+</table>
+
+<h3>Stretch Film / Cling Film</h3>
+<table border="1">
+<tr><th>Priority</th><th>Grade</th><th>Reason</th></tr>
+<tr><td>Primary</td><td>G-Lene F18A020U</td><td>Excellent stretchability</td></tr>
+<tr><td>Alt 1</td><td>G-Lene F18A030U</td><td>Higher output</td></tr>
+<tr><td>Alt 2</td><td>G-Lene E20AN009</td><td>General film use</td></tr>
+</table>
+
+<h3>Carry Bags / Liners</h3>
+<table border="1">
+<tr><th>Priority</th><th>Grade</th><th>Reason</th></tr>
+<tr><td>Primary</td><td>G-Lex F55HM0003</td><td>High strength film</td></tr>
+<tr><td>Alt 1</td><td>G-Lex F55HM0003N</td><td>Variant</td></tr>
+<tr><td>Alt 2</td><td>G-Lene E45A003</td><td>Blending flexibility</td></tr>
+</table>
+
+<hr>
+
+<!-- INJECTION -->
+<h2>Application: Injection Molding</h2>
+
+<h3>Crates / Industrial Containers</h3>
+<table border="1">
+<tr><th>Priority</th><th>Grade</th><th>Reason</th></tr>
+<tr><td>Primary</td><td>G-Lene I60A080</td><td>Balanced stiffness</td></tr>
+<tr><td>Alt 1</td><td>G-Lene I62A080U</td><td>Higher strength + UV</td></tr>
+<tr><td>Alt 2</td><td>G-Lene I60U080</td><td>Outdoor usage</td></tr>
+</table>
+
+<h3>Household Items (Buckets, Toys)</h3>
+<table border="1">
+<tr><th>Priority</th><th>Grade</th><th>Reason</th></tr>
+<tr><td>Primary</td><td>G-Lene I50A180</td><td>High flow</td></tr>
+<tr><td>Alt 1</td><td>G-Lene I56A200U</td><td>Large molded items</td></tr>
+<tr><td>Alt 2</td><td>G-Lene I26A350U</td><td>LLDPE alternative</td></tr>
+</table>
+
+<h3>Caps & Closures</h3>
+<table border="1">
+<tr><th>Priority</th><th>Grade</th><th>Reason</th></tr>
+<tr><td>Primary</td><td>G-Lene I26A350U</td><td>Precision molding</td></tr>
+<tr><td>Alt 1</td><td>G-Lene I26A500U</td><td>Masterbatch compatibility</td></tr>
+<tr><td>Alt 2</td><td>G- Pro IHP120</td><td>PP alternative</td></tr>
+</table>
+
+<hr>
+
+<!-- BLOW MOLDING -->
+<h2>Application: Blow Molding</h2>
+
+<h3>Small Containers (≤5L)</h3>
+<table border="1">
+<tr><th>Priority</th><th>Grade</th><th>Reason</th></tr>
+<tr><td>Primary</td><td>G-Lex B52A003</td><td>Good ESCR</td></tr>
+<tr><td>Alt 1</td><td>G-Lex B52A003N</td><td>Variant</td></tr>
+<tr><td>Alt 2</td><td>G-Lex B56A003</td><td>Alternative HDPE</td></tr>
+</table>
+
+<h3>Medium Containers (≤15L)</h3>
+<table border="1">
+<tr><th>Priority</th><th>Grade</th><th>Reason</th></tr>
+<tr><td>Primary</td><td>G-Lex B63A003</td><td>Higher stiffness</td></tr>
+<tr><td>Alt 1</td><td>G-Lex B63A003N</td><td>Variant</td></tr>
+<tr><td>Alt 2</td><td>G-Lex B55HM0003</td><td>Higher strength</td></tr>
+</table>
+
+<h3>Large Drums (50–120L)</h3>
+<table border="1">
+<tr><th>Priority</th><th>Grade</th><th>Reason</th></tr>
+<tr><td>Primary</td><td>G-Lex B55HM0003</td><td>High strength</td></tr>
+<tr><td>Alt 1</td><td>G-Lex B55HM0003N</td><td>Variant</td></tr>
+<tr><td>Alt 2</td><td>G-Lex B63A003</td><td>Secondary option</td></tr>
+</table>
+
+<hr>
+
+<!-- PIPE -->
+<h2>Application: Pipe</h2>
+
+<h3>PE-100 High Pressure Pipe</h3>
+<table border="1">
+<tr><th>Priority</th><th>Grade</th><th>Reason</th></tr>
+<tr><td>Primary</td><td>G-Lex P52A003</td><td>High strength</td></tr>
+<tr><td>Alt 1</td><td>G-Lex P54A001</td><td>PE-80 alternative</td></tr>
+<tr><td>Alt 2</td><td>G-Lex E52A003</td><td>PE-63 alternative</td></tr>
+</table>
+
+<h3>Telecom Ducts / UV Exposure</h3>
+<table border="1">
+<tr><th>Priority</th><th>Grade</th><th>Reason</th></tr>
+<tr><td>Primary</td><td>G-Lex E52U003</td><td>UV stabilized</td></tr>
+<tr><td>Alt 1</td><td>G-Lex E52U003N</td><td>Variant</td></tr>
+<tr><td>Alt 2</td><td>G-Lex P54A001N</td><td>Alternative</td></tr>
+</table>
+
+<h3>Drip Irrigation</h3>
+<table border="1">
+<tr><th>Priority</th><th>Grade</th><th>Reason</th></tr>
+<tr><td>Primary</td><td>G-Lene D22S010</td><td>Flexibility</td></tr>
+<tr><td>Alt 1</td><td>G-Lene E24A070U</td><td>Durability</td></tr>
+<tr><td>Alt 2</td><td>G-Lene E36A060</td><td>Coating use</td></tr>
+</table>
+
+<hr>
+
+<!-- RAFFIA -->
+<h2>Application: Raffia / Woven</h2>
+
+<h3>Woven Sacks / FIBC</h3>
+<table border="1">
+<tr><th>Priority</th><th>Grade</th><th>Reason</th></tr>
+<tr><td>Primary</td><td>G-Pro WHP035</td><td>Strong raffia</td></tr>
+<tr><td>Alt 1</td><td>G-Lene W50A009</td><td>HDPE option</td></tr>
+<tr><td>Alt 2</td><td>G-Lex W55A004</td><td>High strength yarn</td></tr>
+</table>
+
+<h3>Ropes / Twines / Fishing Nets</h3>
+<table border="1">
+<tr><th>Priority</th><th>Grade</th><th>Reason</th></tr>
+<tr><td>Primary</td><td>G-Lex W55A004</td><td>High strength</td></tr>
+<tr><td>Alt 1</td><td>G-Lex W52ASR009</td><td>Balanced properties</td></tr>
+<tr><td>Alt 2</td><td>G-Lene Y50A010U</td><td>UV stabilized nets</td></tr>
+</table>
+
+<hr>
+
+<!-- ROTOMOLDING -->
+<h2>Application: Rotomolding</h2>
+
+<table border="1">
+<tr><th>Priority</th><th>Grade</th><th>Reason</th></tr>
+<tr><td>Primary</td><td>G-Lene  R35A042</td><td>Tanks</td></tr>
+<tr><td>Alt 1</td><td>G-Lene  R36A050U</td><td>UV tanks</td></tr>
+<tr><td>Alt 2</td><td>G-Lene  R35U042</td><td>Outdoor applications</td></tr>
+</table>
+
+<hr>
+
+<!-- NONWOVEN -->
+<h2>Application: Nonwoven / Fiber</h2>
+
+<table border="1">
+<tr><th>Priority</th><th>Grade</th><th>Reason</th></tr>
+<tr><td>Primary</td><td>G-Pro YHP360</td><td>Spunbond fabric</td></tr>
+<tr><td>Alt 1</td><td>G-Pro FHP105</td><td>Film-based packaging</td></tr>
+<tr><td>Alt 2</td><td>G-Pro THP035</td><td>Thermoforming</td></tr>
+</table>
+
+<hr>
+
+<!-- PTA -->
+<h2>Application: Polyester / PET</h2>
+
+<table border="1">
+<tr><th>Priority</th><th>Grade</th><th>Reason</th></tr>
+<tr><td>Primary</td><td>G-Tex PTA</td><td>Polyester & PET</td></tr>
+<tr><td>Alt 1</td><td>-</td><td>Application specific</td></tr>
+<tr><td>Alt 2</td><td>-</td><td>Application specific</td></tr>
+</table>
+
+<hr>
+
+<p><b>Note:</b> Use UV-stabilized grades (U variants) for outdoor and high sunlight applications.</p>
+
+<p><b>Source:</b> GAIL Polymer Brochures :contentReference[oaicite:2]{index=2} :contentReference[oaicite:3]{index=3}</p>
+
+</body>
+</html>
